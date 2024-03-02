@@ -1,3 +1,4 @@
+
 body {
 	background-color: #243443;
 	color: #ecf0f1;
@@ -20,6 +21,7 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center; 
 	margin: 1em;
 }
 
@@ -56,6 +58,10 @@ section h2 {
 	padding: 0.5em 1em;
 	text-decoration: none;
 	transition: background-color 0.2s ease-in-out;
+	max-width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .download-button:hover {
@@ -63,8 +69,24 @@ section h2 {
 }
 
 
+#center-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
 footer {
 	background-color: #34495e;
 	padding: 1em;
 	text-align: center;
+}
+
+footer a {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+footer a img {
+	height: 32px;
+	width: 32px;
 }
